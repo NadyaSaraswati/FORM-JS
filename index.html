@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+</head>
+<body align="center">
+    <h1>Formulir</h1>
+    <form action="#" method="POST" onSubmit="validasi()">
+        <table cellspacing="8" align="center" cellpadding="8" border="0">
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" placeholder="Budi Pekerti" id="n1"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" placeholder="budipekerti@gmail.com" id="e1"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><input type="text" placeholder="Jl. Mangga No.2" id="a1"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+
+    <script type="text/javascript">
+        function validasi() {
+            var n1 = document.getElementById("n1").value;
+            var e1 = document.getElementById("e1").value;
+            var a1 = document.getElementById("a1").value;
+            if (n1 !== "" && e1 !== "" && a1 !== "") {
+                alert('Data Anda Berhasil Tersimpan');
+                window.location.href = "index.html";
+            } else {
+                alert('Tolong Lengkapi Data Anda!');
+            }
+        }
+    </script>
+</body>
+</html>
